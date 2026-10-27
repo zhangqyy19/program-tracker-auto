@@ -1,0 +1,175 @@
+{
+  "profile": {
+    "level": "undergraduate",
+    "grad_year": 2029,
+    "region": "US",
+    "notes": "Undergraduate, expected graduation 2029 (second-year in the 2026-27 academic year)."
+  },
+  "us_location_regex": "NYC|New York|Chicago|Austin|Boston|Boulder|Seattle|Miami|San Francisco|Mountain View|United States|\\bUSA?\\b|,\\s*(NY|IL|TX|CA|MA|WA|CO|FL|PA|NJ)\\b",
+  "programs": [
+    {
+      "id": "janestreet-focus-nyc",
+      "firm": "Jane Street",
+      "name": "FOCUS (NYC)",
+      "info_url": "https://www.janestreet.com/join-jane-street/programs-and-events/focus/",
+      "check": {
+        "type": "greenhouse",
+        "board": "jshiddenevents",
+        "title": "\\bFOCUS\\b",
+        "title_exclude": "\\bIN FOCUS\\b"
+      },
+      "details_url": "https://www.janestreet.com/focus-nyc-email",
+      "eligibility_note": "Jane Street describes FOCUS as a program for first-year university students who faced barriers to advanced STEM access."
+    },
+    {
+      "id": "janestreet-insight-nyc",
+      "firm": "Jane Street",
+      "name": "INSIGHT (NYC)",
+      "info_url": "https://www.janestreet.com/join-jane-street/programs-and-events/insight/",
+      "check": {
+        "type": "greenhouse",
+        "board": "jshiddenevents",
+        "title": "\\bINSIGHT\\b"
+      },
+      "details_url": "https://www.janestreet.com/insight-nyc-email",
+      "eligibility_note": "For women, transgender and gender-expansive undergraduates. Three tracks: Trading & Research, Software Engineering, Strategy & Product."
+    },
+    {
+      "id": "janestreet-bridge",
+      "firm": "Jane Street",
+      "name": "Bridge",
+      "info_url": "https://www.janestreet.com/join-jane-street/programs-and-events/bridge/",
+      "check": {
+        "type": "greenhouse",
+        "board": "jshiddenevents",
+        "title": "\\bBridge\\b"
+      },
+      "eligibility_note": "Day-long program for first- and second-year university students."
+    },
+    {
+      "id": "optiver-futurefocus-chicago",
+      "firm": "Optiver",
+      "name": "FutureFocus (Chicago)",
+      "info_url": "https://optiver.com/working-at-optiver/career-opportunities/",
+      "check": {
+        "type": "greenhouse",
+        "board": "optiverus",
+        "title": "future\\s*focus"
+      },
+      "eligibility_note": "Five-day program with Technology and Quantitative Trading & Research tracks. The 2027 Amsterdam edition targets students graduating in 2029; the US edition has historically been posted around December-January for a late-March program."
+    },
+    {
+      "id": "hrt-explore-nyc",
+      "firm": "Hudson River Trading",
+      "name": "Explore HRT (NYC)",
+      "info_url": "https://www.hudsonrivertrading.com/student-opportunities/",
+      "check": {
+        "type": "greenhouse",
+        "board": "wehrtyou",
+        "extra_boards": ["hrttalentcommunity"],
+        "title": "Explore HRT"
+      },
+      "eligibility_note": "Multi-day spring program for students interested in quantitative trading. The last cycle targeted 2028 graduates, so the 2027 cycle may target 2028 or 2029 graduates. Check the posting."
+    },
+    {
+      "id": "hrt-inside-nyc",
+      "firm": "Hudson River Trading",
+      "name": "Inside HRT (NYC)",
+      "info_url": "https://www.hudsonrivertrading.com/student-opportunities/",
+      "check": {
+        "type": "greenhouse",
+        "board": "wehrtyou",
+        "extra_boards": ["hrttalentcommunity"],
+        "title": "Inside HRT"
+      },
+      "eligibility_note": "Three-day spring program for first- and second-year students in CS, math or other STEM fields with little prior exposure to quant finance."
+    },
+    {
+      "id": "imc-launchpad-chicago",
+      "firm": "IMC Trading",
+      "name": "Launchpad (Chicago)",
+      "info_url": "https://www.imc.com/us/careers/students-graduates/programs/launchpad",
+      "check": {
+        "type": "greenhouse",
+        "board": "imc",
+        "title": "Launchpad"
+      },
+      "eligibility_note": "Two-day Chicago program for second-year students (penultimate year in the following summer). Quant Trading and Software Engineering tracks."
+    },
+    {
+      "id": "google-asdi-us",
+      "firm": "Google",
+      "name": "ASDI / STEP Internship (US)",
+      "info_url": "https://www.google.com/about/careers/applications/students/",
+      "check": {
+        "type": "google_careers",
+        "search_url": "https://www.google.com/about/careers/applications/jobs/results?q=%22Associate%20Software%20Developer%20Intern%22&target_level=INTERN_AND_APPRENTICE&location=United%20States",
+        "slug": "associate-software-developer-intern|step-intern|student-training-in-engineering"
+      },
+      "eligibility_note": "Google's first/second-year program formerly called STEP now appears on Google Careers as 'Associate Software Developer Intern' (ASDI). Summer 2027 US posting was not up as of late October 2026."
+    },
+    {
+      "id": "citadel-discover-us",
+      "firm": "Citadel",
+      "name": "Discover Citadel (US)",
+      "info_url": "https://www.citadel.com/careers/programs-and-events/discover-citadel/",
+      "check": {
+        "type": "html",
+        "url": "https://www.citadel.com/careers/programs-and-events/discover-citadel/",
+        "block_start": "Discover\\s*[–-]\\s*U\\.?S\\.?",
+        "block_end": "Discover\\s*[–-]\\s*(EMEA|Singapore|Hong Kong|India|Australia)",
+        "open_regex": "Application Deadline",
+        "apply_link": "discover-citadel/apply/?$",
+        "eligibility_regex": "Qualifications\\s*&\\s*Requirements.{0,400}"
+      },
+      "eligibility_note": "First- or second-year undergraduates (December 2028 to June 2030 graduation). US and Canada students are considered for the New York event only."
+    },
+    {
+      "id": "citadel-securities-discover-us",
+      "firm": "Citadel Securities",
+      "name": "Discover Citadel Securities (US)",
+      "info_url": "https://www.citadelsecurities.com/careers/programs-and-events/discover-citadel-securities/",
+      "check": {
+        "type": "html",
+        "url": "https://www.citadelsecurities.com/careers/programs-and-events/discover-citadel-securities/",
+        "block_start": "Discover\\s*[–-]\\s*U\\.?S\\.?",
+        "block_end": "Discover\\s*[–-]\\s*(EMEA|Singapore|Hong Kong|India|Australia)",
+        "open_regex": "Application Deadline",
+        "apply_link": "discover-citadel-securities/apply/?$",
+        "eligibility_regex": "Qualifications\\s*&\\s*Requirements.{0,400}"
+      },
+      "eligibility_note": "Same format as Discover Citadel: first- or second-year undergraduates graduating December 2028 to June 2030."
+    },
+    {
+      "id": "deshaw-fellowships",
+      "firm": "D. E. Shaw",
+      "name": "Fellowships (Discovery / Latitude / Nexus / Momentum)",
+      "info_url": "https://fellowships.deshaw.com",
+      "check": {
+        "type": "html",
+        "url": "https://fellowships.deshaw.com",
+        "open_regex": "\\b(Discovery|Latitude|Nexus|Momentum)\\b(?! Citadel)",
+        "case_sensitive": true,
+        "closed_regex": "currently closed|not currently accepting",
+        "closed_window": 600,
+        "apply_link": "deshaw\\.com/(careers/\\d+|forms/|s/)"
+      },
+      "eligibility_note": "Three-day NYC fellowships. Discovery and Latitude have targeted second-year undergraduates; Nexus has targeted rising juniors. As of October 2026 the campus site lists no US fellowship, only a closed London Insight Programme."
+    },
+    {
+      "id": "twosigma-new-seekers-summit",
+      "firm": "Two Sigma",
+      "name": "New Seekers Summit",
+      "info_url": "https://www.twosigma.com/new-seekers-summit/",
+      "check": {
+        "type": "html",
+        "url": "https://www.twosigma.com/new-seekers-summit/",
+        "open_regex": "apply (now|here|today)|applications? (are|is) (now )?open|application deadline|apply by|register (now|here)",
+        "closed_regex": "applications? (are|is) (now )?closed|not currently accepting",
+        "closed_window": 300,
+        "apply_link": "greenhouse|twosigma\\.com/(apply|careers)|forms\\.|typeform|smartsheet|airtable"
+      },
+      "eligibility_note": "For first- and second-year undergraduates interested in quantitative research and data science. Historically announced in the fall with a November deadline."
+    }
+  ]
+}
